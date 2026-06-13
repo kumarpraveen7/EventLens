@@ -11,3 +11,4 @@ public class EventLensApplication {
         SpringApplication.run(EventLensApplication.class, args);
     }
 }
+
