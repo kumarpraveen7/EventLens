@@ -1,0 +1,16 @@
+package com.eventlens.model;
+
+public enum EventStage {
+    CLIENT_CREATED,
+    CLIENT_QUEUED,
+    CLIENT_SENT,
+    EVENTBRIDGE_RECEIVED,
+    SQS_ENQUEUED,
+    LAMBDA_STARTED,
+    LAMBDA_COMPLETED,
+    SERVER_RECEIVED,
+    SERVER_PROCESSED,
+    ACK_SENT,
+    CLIENT_ACKED,
+    DLQ_WRITTEN
+}
