@@ -11,6 +11,7 @@ import com.eventlens.model.GameEventRequest;
 import com.eventlens.model.GameEventType;
 import com.eventlens.model.ParticipantRole;
 import com.eventlens.model.StreamAnalysis;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.Clock;
@@ -35,6 +36,7 @@ public class EventDropDetector {
     private final Clock clock;
     private final Map<String, StreamState> streams = new ConcurrentHashMap<>();
 
+    @Autowired
     public EventDropDetector(EventLensProperties properties, SuggestionCatalog suggestions) {
         this(properties, suggestions, Clock.systemUTC());
     }
